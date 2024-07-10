@@ -14,7 +14,7 @@ class Penyewa extends Model
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
-        'nama',
+        'nama_lengkap',
         'alamat',
         'no_telephone',
     ];
@@ -28,12 +28,12 @@ class Penyewa extends Model
 
     // Validation
     protected $validationRules      = [
-        'nama'=>'required',
+        'nama_lengkap'=>'required',
         'alamat'=>'required',
         'no_telephone'=>'required',
     ];
     protected $validationMessages   = [
-        'nama'=>[
+        'nama_lengkap'=>[
             'required'=>'Silahkan masukan nama',
         ],  
         'alamat'=>[
